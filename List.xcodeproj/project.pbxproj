@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		045C8B583C79E8C63A7A9FE1 /* Pods_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD7E611DE916FAB154BFAC7 /* Pods_List.framework */; };
 		28D08AE2C5A6A23B43A3FE8B /* Pods_ListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E24C49AD9D99945224E1E1 /* Pods_ListTests.framework */; };
+		7F5C4F3F2431895A009B61F6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C4F3E2431895A009B61F6 /* DashboardViewController.swift */; };
+		7F5C4F42243189DE009B61F6 /* DashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C4F41243189DE009B61F6 /* DashBoardViewModel.swift */; };
+		7F5C4F442431D19A009B61F6 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C4F432431D19A009B61F6 /* LoginProtocols.swift */; };
+		7F5C4F462431D44A009B61F6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C4F452431D44A009B61F6 /* LoginPresenter.swift */; };
+		7F5C4F482431D8E7009B61F6 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C4F472431D8E7009B61F6 /* LoginInteractor.swift */; };
+		7F5C4F4A2431DEEF009B61F6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C4F492431DEEF009B61F6 /* LoginRouter.swift */; };
 		7F755254242DAE13003140E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F755253242DAE13003140E8 /* AppDelegate.swift */; };
 		7F755256242DAE13003140E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F755255242DAE13003140E8 /* SceneDelegate.swift */; };
 		7F755258242DAE13003140E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F755257242DAE13003140E8 /* ViewController.swift */; };
@@ -49,6 +55,12 @@
 		3E235298164E5A1A676AF087 /* Pods_List_ListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_List_ListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD7E611DE916FAB154BFAC7 /* Pods_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3EAE5051DF841534D7867E /* Pods-ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListTests.release.xcconfig"; path = "Target Support Files/Pods-ListTests/Pods-ListTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F5C4F3E2431895A009B61F6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		7F5C4F41243189DE009B61F6 /* DashBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModel.swift; sourceTree = "<group>"; };
+		7F5C4F432431D19A009B61F6 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		7F5C4F452431D44A009B61F6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		7F5C4F472431D8E7009B61F6 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		7F5C4F492431DEEF009B61F6 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		7F755250242DAE12003140E8 /* List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F755253242DAE13003140E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F755255242DAE13003140E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +113,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F5C4F3D243188B1009B61F6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7F755257242DAE13003140E8 /* ViewController.swift */,
+				7F755289242DB84F003140E8 /* LoginViewModel.swift */,
+				7F5C4F432431D19A009B61F6 /* LoginProtocols.swift */,
+				7F5C4F452431D44A009B61F6 /* LoginPresenter.swift */,
+				7F5C4F472431D8E7009B61F6 /* LoginInteractor.swift */,
+				7F5C4F492431DEEF009B61F6 /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7F5C4F40243189C1009B61F6 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C4F3E2431895A009B61F6 /* DashboardViewController.swift */,
+				7F5C4F41243189DE009B61F6 /* DashBoardViewModel.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
 		7F755247242DAE12003140E8 = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +164,10 @@
 				7F755255242DAE13003140E8 /* SceneDelegate.swift */,
 				7FF894EB242DFDD5005DD298 /* Extentions */,
 				7F755288242DB7CE003140E8 /* Models */,
-				7F755257242DAE13003140E8 /* ViewController.swift */,
-				7F755289242DB84F003140E8 /* LoginViewModel.swift */,
-				7FF894E9242DF4BF005DD298 /* UserDefaults+PropertyWrapper.swift */,
+				7F5C4F3D243188B1009B61F6 /* Login */,
+				7F5C4F40243189C1009B61F6 /* DashBoard */,
 				7F755259242DAE13003140E8 /* Main.storyboard */,
+				7FF894E9242DF4BF005DD298 /* UserDefaults+PropertyWrapper.swift */,
 				7F75525F242DAE1D003140E8 /* Assets.xcassets */,
 				7F755261242DAE1D003140E8 /* LaunchScreen.storyboard */,
 				7F755264242DAE1D003140E8 /* Info.plist */,
@@ -438,14 +472,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5C4F462431D44A009B61F6 /* LoginPresenter.swift in Sources */,
 				7F755258242DAE13003140E8 /* ViewController.swift in Sources */,
+				7F5C4F3F2431895A009B61F6 /* DashboardViewController.swift in Sources */,
 				7FF894EA242DF4BF005DD298 /* UserDefaults+PropertyWrapper.swift in Sources */,
 				7F75525E242DAE13003140E8 /* List.xcdatamodeld in Sources */,
 				7F75528A242DB84F003140E8 /* LoginViewModel.swift in Sources */,
+				7F5C4F42243189DE009B61F6 /* DashBoardViewModel.swift in Sources */,
 				7F755254242DAE13003140E8 /* AppDelegate.swift in Sources */,
 				7F755287242DB7A9003140E8 /* User.swift in Sources */,
 				7F75528C242DC58B003140E8 /* String+Extention.swift in Sources */,
+				7F5C4F482431D8E7009B61F6 /* LoginInteractor.swift in Sources */,
 				7F755256242DAE13003140E8 /* SceneDelegate.swift in Sources */,
+				7F5C4F4A2431DEEF009B61F6 /* LoginRouter.swift in Sources */,
+				7F5C4F442431D19A009B61F6 /* LoginProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
