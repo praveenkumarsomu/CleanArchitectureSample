@@ -7,6 +7,7 @@ target 'List' do
 
   # Pods for List
   pod 'Swinject'
+  pod 'SwinjectStoryboard'
   pod 'ReactiveSwift'
   pod 'ReactiveCocoa'
   target 'ListTests' do

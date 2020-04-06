@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import Swinject
+import SwinjectStoryboard
+
 var container = Container()
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -81,3 +83,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension SwinjectStoryboard {
+    @objc class func setup() {
+        defaultContainer.storyboardInitCompleted(ViewController.self) { r, c in
+          //  c.animal = r.resolve(Animal.self)
+        }
+    }
+}

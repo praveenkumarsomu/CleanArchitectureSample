@@ -3,23 +3,28 @@ PODS:
     - ReactiveSwift (~> 6.2)
   - ReactiveSwift (6.2.1)
   - Swinject (2.7.1)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
 
 DEPENDENCIES:
   - ReactiveCocoa
   - ReactiveSwift
   - Swinject
+  - SwinjectStoryboard
 
 SPEC REPOS:
   trunk:
     - ReactiveCocoa
     - ReactiveSwift
     - Swinject
+    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   ReactiveCocoa: a123c42f449c552460a4ee217dd49c76a17c8204
   ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: b755870588faa835474e67c5b3c5e60dceb4c620
+PODFILE CHECKSUM: dd4810ccb74d8907d814fe6b17cf0a46b14871e2
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.8.4
